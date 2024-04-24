@@ -7,7 +7,7 @@ app.engine("handlebars", exphbs.engine());
 app.set("view engine", "handlebars");
 
 app.get("/", (request, response) => {
-  response.send("Hello, World!");
+  response.render("home");
 });
 
 app.listen(3001, () => {
