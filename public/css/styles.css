@@ -12,6 +12,7 @@
   --button-color: #393a4b;
   --bg-main: #fafafa;
   --bg-tasks: #fff;
+  --box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
 }
 
 header {
@@ -68,4 +69,26 @@ main {
 
 .tasks {
   background: var(--bg-tasks);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.3125rem;
+  margin-top: -1.5rem;
+}
+
+.tasks .task {
+  padding: 1rem 1.25rem;
+}
+.task form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.task button {
+  border: none;
+  background: none;
 }
